@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitZone Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 15px 0;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background: #f44336;
+      transition: 0.3s;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services, .trainers {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      margin: 15px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background: #f44336;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FitZone Gym</h1>
+    <p>Push Your Limits. Unleash Your Power.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#classes">Classes</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome to FitZone</h1>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>FitZone is a state-of-the-art fitness center offering world-class equipment, expert trainers, and a supportive environment to help you reach your fitness goals.</p>
+  </section>
+
+  <section id="classes">
+    <h2>Our Classes</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?yoga,fitness" alt="Yoga">
+        <h3>Yoga</h3>
+        <p>Improve your flexibility and reduce stress with our yoga classes.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?weightlifting,gym" alt="Strength Training">
+        <h3>Strength Training</h3>
+        <p>Build muscle and burn fat with guided strength programs.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?cardio,exercise" alt="Cardio Blast">
+        <h3>Cardio Blast</h3>
+        <p>Boost your heart health with high-intensity cardio sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainers">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?trainer,man" alt="Trainer 1">
+        <h3>John Smith</h3>
+        <p>Certified strength coach with 10+ years of experience.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?trainer,woman" alt="Trainer 2">
+        <h3>Emily Davis</h3>
+        <p>Yoga and wellness expert focused on holistic health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FitZone Gym. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
